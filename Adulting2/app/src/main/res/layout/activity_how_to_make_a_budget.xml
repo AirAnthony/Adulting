@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HowToMakeABudgetActivity">
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="118dp"
+        android:layout_height="117dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.045"
+        app:srcCompat="@drawable/companylogo" />
+
+    <TextView
+        android:id="@+id/financelbl"
+        android:layout_width="136dp"
+        android:layout_height="31dp"
+        android:fontFamily="@font/cantata_one"
+        android:text="  Finance"
+        android:textColor="#0C0C0C"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.534"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8"
+        app:layout_constraintVertical_bias="0.072" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="78dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.252"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.263"
+        app:srcCompat="@drawable/financesymbol" />
+
+    <TextView
+        android:id="@+id/budgetlbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="49dp"
+        android:fontFamily="@font/cantata_one"
+        android:text="How to Make a Budget"
+        android:textColor="#0E0E0E"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/financelbl"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="405dp"
+        android:layout_height="386dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.979">
+
+        <ScrollView
+            android:layout_width="409dp"
+            android:layout_height="390dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/budgetText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/budgetText"
+                    android:fontFamily="@font/cantata_one"
+                    android:text="To take control of your spending and achieve your financial goals, you need an accurate and realistic budget that is suited to you and your life. "
+                    android:textColor="#0E0E0E"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/budgetText2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="234dp"
+                    android:layout_marginTop="62dp"
+                    android:fontFamily="@font/cantata_one"
+                    android:text="A budget tracks and compares your income and expenses for a set period if time. Generally, this period is for one month. A proper budget will show you how much money you bring in and compare that amount to your expenses as well as non-essential spending. If utilized, a budget can help you save money and can assist you in achieving your financial goals."
+                    android:textColor="#0E0E0E"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/budgetText3"
+                    android:layout_width="match_parent"
+                    android:layout_height="117dp"
+                    android:fontFamily="@font/cantata_one"
+                    android:text="The key to a budget is to have balance. If you spend less in one area, you can spend more in another or are able to utilize that money to achieve a goal, such as a large purchase you’ve been wanting, a vacation, an emergency fund or even investment."
+                    android:textColor="#100F0F"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/step1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cantata_one"
+                    android:text="Let's start by making a list of your expenses. Gather some of your financial staments, and write below a list of the expenses you've had in the past month."
+                    android:textColor="#101010"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/step1Input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:inputType="textMultiLine"
+                    android:text="Enter Your Expenses Here" />
+
+                <TextView
+                    android:id="@+id/step2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cantata_one"
+                    android:text="Next, gather your statements an make a list of your income, and enter it below."
+                    android:textColor="#0E0E0E"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/step2Input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:inputType="textMultiLine"
+                    android:text="Enter Your Income Here" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
