@@ -8,86 +8,81 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.widget.TextView;
-import android.widget.Toast;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class SignUpActivity extends AppCompatActivity {
 
     //Variables
     private EditText email;
     private EditText password;
-    private TextView numOfAttempts;
-    private TextView signUp;
-    private Button signIn;
-    private int count = 5;
+    private TextView signIn;
+    private Button continue_;
+    private CheckBox termsAndConditions;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_sign_up);
 
         //Linking the variables to the UI components
         email = (EditText)findViewById(R.id.inputEmail);
         password = (EditText)findViewById(R.id.inputPassword);
-        numOfAttempts = (TextView)findViewById(R.id.attempts);
-        signIn = (Button)findViewById(R.id.btnSignIn);
-        signUp = (TextView)findViewById(R.id.signUpLink);
+        continue_ = (Button)findViewById(R.id.btnContinue);
+        signIn = (TextView)findViewById(R.id.signInLink);
+        termsAndConditions = (CheckBox)findViewById(R.id.chkBoxOne);
 
-        numOfAttempts.setText("Number of attempts left: 5");
-
-        //When the sign in button is clicked, the validation function will be called to check email and password
-        signIn.setOnClickListener(new View.OnClickListener() {
+        //When continue button is clicked and the check box is checked, signUpValidation() function will be called.
+        continue_.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                validation(email.getText().toString(), password.getText().toString());
+                if(termsAndConditions.isChecked()) {
+                    signUpValidation();
+                }
             }
         });
 
-        //When the sign up button is clicked, user will be taken to the sign up activity.
-        signUp.setOnClickListener(new View.OnClickListener() {
+        //When sign in button is clicked the user is taken to the sign in page(MainActivity)
+        signIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, SignUpActivity.class);
+                Intent intent = new Intent(SignUpActivity.this, MainActivity.class);
                 startActivity(intent);
             }
         });
 
+
+
     }
 
-    //Validation function to check that the username and password are correct.
-    //If the credentials are correct the user is taken to the welcome activity.
-    //If the credentials are not correct the user has a certain amount of attempts until the button disappears.
-    private void validation(String userEmail, String userPassword) {
-        //Hardcoded username and password.  Will make it more dynamic for prototype two when database will be implemented.
-        if((userEmail.equals("userOne@georgebrown.ca")) && (userPassword.equals("05945"))) {
-            Intent intent = new Intent(MainActivity.this, WelcomePage.class);
+    //Takes user to the Welcome Activity
+    private void signUpValidation() {
+
+        //If email and password are not empty and the email and password follow the regex requirements then take the user to the Welcome Activity.
+        //Regex for password is 6-12 characters in length, contain at least one uppercase letter, and contain at least one special character.
+        if(email.getText().toString().isEmpty() == false && password.getText().toString().isEmpty() == false
+                && email.getText().toString().matches("\\w+([-+.']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*")
+                && password.getText().toString().matches("((?=.*[A-Z])(?=.*\\W).{6,12})")) {
+            Intent intent = new Intent(SignUpActivity.this, WelcomePage.class);
             startActivity(intent);
-        }else {
-            count--;
-
-            numOfAttempts.setText("Number of attempts left: " + String.valueOf(count));
-
-            //If the count(attempts) is zero then the sign in button is no longer enabled and the background is set to a color to make it invisible.
-            if(count == 0) {
-                signIn.setEnabled(false);
-                signIn.setBackgroundColor(808080);
-            }
         }
+
     }
+
     //start sign up activity
     private void getSignUpActivity(){
         Intent start = new Intent(getApplicationContext(), SignUpActivity.class);
         startActivity(start);
     }
-//start profile activity
+    //start profile activity
     private void getProfile(){
         Intent start = new Intent(getApplicationContext(), ProfileActivity.class);
         startActivity(start);
     }
-//start main content activity
+    //start main content activity
     private void getMainContent(){
         Intent start = new Intent(getApplicationContext(), MainContentActivity.class);
         startActivity(start);
@@ -112,7 +107,7 @@ public class MainActivity extends AppCompatActivity {
         Intent start = new Intent(getApplicationContext(), WorkingThroughDepressionActivity.class);
         startActivity(start);
     }
-//create menu
+    //create menu
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inf = getMenuInflater();
@@ -120,7 +115,7 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
-//switch to fire menu options
+    //switch to fire menu options
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
