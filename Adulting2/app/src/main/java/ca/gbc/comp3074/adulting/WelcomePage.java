@@ -58,6 +58,11 @@ public class WelcomePage extends AppCompatActivity {
         inf.inflate(R.menu.main_menu, menu);
         return true;
     }
+    //start signIn activity
+    private void getSignInPage(){
+        Intent start = new Intent(getApplicationContext(), MainActivity.class);
+        startActivity(start);
+    }
 
     //switch to fire menu options
     @Override
@@ -65,6 +70,9 @@ public class WelcomePage extends AppCompatActivity {
         switch (item.getItemId()) {
             case R.id.signUpbtn:
                 getSignUpActivity();
+                return true;
+            case R.id.signInbtn:
+                getSignInPage();
                 return true;
             case R.id.profilebtn:
                 getProfile();
