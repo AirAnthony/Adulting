@@ -5,6 +5,9 @@
         android:id="@+id/signUpbtn"
         android:title="Sign Up" />
     <item
+        android:id="@+id/signInbtn"
+        android:title="Sign In" />
+    <item
         android:id="@+id/profilebtn"
         android:title="Profile" />
     <item

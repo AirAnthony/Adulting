@@ -51,6 +51,11 @@ public class MainContentActivity extends AppCompatActivity {
         Intent start = new Intent(getApplicationContext(), WorkingThroughDepressionActivity.class);
         startActivity(start);
     }
+    //start signIn activity
+    private void getSignInPage(){
+        Intent start = new Intent(getApplicationContext(), MainActivity.class);
+        startActivity(start);
+    }
     //create menu
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -65,6 +70,9 @@ public class MainContentActivity extends AppCompatActivity {
         switch (item.getItemId()) {
             case R.id.signUpbtn:
                 getSignUpActivity();
+                return true;
+            case R.id.signInbtn:
+                getSignInPage();
                 return true;
             case R.id.profilebtn:
                 getProfile();

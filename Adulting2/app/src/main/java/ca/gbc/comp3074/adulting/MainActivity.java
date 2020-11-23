@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView signUp;
     private Button signIn;
     private int count = 5;
+    private TextView errorMessage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
         numOfAttempts = (TextView)findViewById(R.id.attempts);
         signIn = (Button)findViewById(R.id.btnSignIn);
         signUp = (TextView)findViewById(R.id.signUpLink);
+        errorMessage = (TextView)findViewById(R.id.signInErrorMessage);
 
         numOfAttempts.setText("Number of attempts left: 5");
 
@@ -69,6 +71,8 @@ public class MainActivity extends AppCompatActivity {
             count--;
 
             numOfAttempts.setText("Number of attempts left: " + String.valueOf(count));
+            //Error message for bad credentials attempt, and displayed login info for testing purposes.
+            errorMessage.setText("Incorrect username and password. For testing purposes, use 'userOne@georgebrown.ca' for the username, and '05945' for the password.");
 
             //If the count(attempts) is zero then the sign in button is no longer enabled and the background is set to a color to make it invisible.
             if(count == 0) {
@@ -112,6 +116,11 @@ public class MainActivity extends AppCompatActivity {
         Intent start = new Intent(getApplicationContext(), WorkingThroughDepressionActivity.class);
         startActivity(start);
     }
+    //start signIn activity
+    private void getSignInPage(){
+        Intent start = new Intent(getApplicationContext(), MainActivity.class);
+        startActivity(start);
+    }
 //create menu
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -126,6 +135,9 @@ public class MainActivity extends AppCompatActivity {
         switch (item.getItemId()) {
             case R.id.signUpbtn:
                 getSignUpActivity();
+                return true;
+            case R.id.signInbtn:
+                getSignInPage();
                 return true;
             case R.id.profilebtn:
                 getProfile();

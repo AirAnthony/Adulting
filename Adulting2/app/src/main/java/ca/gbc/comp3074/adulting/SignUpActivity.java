@@ -22,6 +22,7 @@ public class SignUpActivity extends AppCompatActivity {
     private TextView signIn;
     private Button continue_;
     private CheckBox termsAndConditions;
+    private TextView errorMessage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +35,8 @@ public class SignUpActivity extends AppCompatActivity {
         continue_ = (Button)findViewById(R.id.btnContinue);
         signIn = (TextView)findViewById(R.id.signInLink);
         termsAndConditions = (CheckBox)findViewById(R.id.chkBoxOne);
+        errorMessage = (TextView)findViewById(R.id.signUpErrorMessage);
+
 
         //When continue button is clicked and the check box is checked, signUpValidation() function will be called.
         continue_.setOnClickListener(new View.OnClickListener() {
@@ -41,6 +44,8 @@ public class SignUpActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if(termsAndConditions.isChecked()) {
                     signUpValidation();
+                }else {
+                    errorMessage.setText("Please agree to the terms and conditions.");
                 }
             }
         });
@@ -61,13 +66,28 @@ public class SignUpActivity extends AppCompatActivity {
     //Takes user to the Welcome Activity
     private void signUpValidation() {
 
-        //If email and password are not empty and the email and password follow the regex requirements then take the user to the Welcome Activity.
+//If email and password are not empty and the email and password follow the regex requirements then take the user to the Welcome Activity.
+        //If not, then an appropriate error message will be displayed to the user.
         //Regex for password is 6-12 characters in length, contain at least one uppercase letter, and contain at least one special character.
-        if(email.getText().toString().isEmpty() == false && password.getText().toString().isEmpty() == false
-                && email.getText().toString().matches("\\w+([-+.']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*")
-                && password.getText().toString().matches("((?=.*[A-Z])(?=.*\\W).{6,12})")) {
-            Intent intent = new Intent(SignUpActivity.this, WelcomePage.class);
-            startActivity(intent);
+        if(email.getText().toString().isEmpty() == false) {
+            if(password.getText().toString().isEmpty() == false) {
+                if (email.getText().toString().matches("\\w+([-+.']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*")) {
+                    if (password.getText().toString().matches("((?=.*[A-Z])(?=.*\\W).{6,12})")) {
+
+                    }
+                    else {
+                        errorMessage.setText("Password must be between 6 and 12 characters containing at least one upper case character, and one special character.");
+                    }
+                }
+                else {
+                    errorMessage.setText("Must use a valid email address.");
+                }
+            }
+            else {
+                errorMessage.setText("Password cannot be empty.");
+            }
+        } else {
+            errorMessage.setText("Email cannot be empty.");
         }
 
     }
