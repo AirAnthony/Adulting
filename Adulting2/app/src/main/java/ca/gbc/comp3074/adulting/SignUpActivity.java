@@ -66,14 +66,15 @@ public class SignUpActivity extends AppCompatActivity {
     //Takes user to the Welcome Activity
     private void signUpValidation() {
 
-//If email and password are not empty and the email and password follow the regex requirements then take the user to the Welcome Activity.
+        //If email and password are not empty and the email and password follow the regex requirements then take the user to the Welcome Activity.
         //If not, then an appropriate error message will be displayed to the user.
         //Regex for password is 6-12 characters in length, contain at least one uppercase letter, and contain at least one special character.
         if(email.getText().toString().isEmpty() == false) {
             if(password.getText().toString().isEmpty() == false) {
                 if (email.getText().toString().matches("\\w+([-+.']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*")) {
                     if (password.getText().toString().matches("((?=.*[A-Z])(?=.*\\W).{6,12})")) {
-
+                        Intent intent = new Intent(SignUpActivity.this, WelcomePage.class);
+                        startActivity(intent);
                     }
                     else {
                         errorMessage.setText("Password must be between 6 and 12 characters containing at least one upper case character, and one special character.");
@@ -127,6 +128,11 @@ public class SignUpActivity extends AppCompatActivity {
         Intent start = new Intent(getApplicationContext(), WorkingThroughDepressionActivity.class);
         startActivity(start);
     }
+    //start signIn activity
+    private void getSignInPage(){
+        Intent start = new Intent(getApplicationContext(), MainActivity.class);
+        startActivity(start);
+    }
     //create menu
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -141,6 +147,9 @@ public class SignUpActivity extends AppCompatActivity {
         switch (item.getItemId()) {
             case R.id.signUpbtn:
                 getSignUpActivity();
+                return true;
+            case R.id.signInbtn:
+                getSignInPage();
                 return true;
             case R.id.profilebtn:
                 getProfile();
