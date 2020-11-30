@@ -5,10 +5,14 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainContentActivity extends AppCompatActivity {
 
@@ -16,7 +20,42 @@ public class MainContentActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_content);
+
+
+        //initialize buttons
+        Button financebtn = (Button) findViewById(R.id.financebtn);
+        Button wellnessbtn = (Button) findViewById(R.id.wellnessbtn);
+        Button personalSkillsbtn = (Button) findViewById(R.id.personalSkillsbtn);
+
+        //navigation for the main content finance button
+        financebtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent start = new Intent(getApplicationContext(), HowToMakeABudgetActivity.class);
+                startActivity(start);
+            }
+        });
+
+        //navigation for the main content wellness button
+        wellnessbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent start = new Intent(getApplicationContext(), WorkingThroughDepressionActivity.class);
+                startActivity(start);
+            }
+        });
+
+        //navigation for the main content personal skills button
+        personalSkillsbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent start = new Intent(getApplicationContext(), CookingBasicsActivity.class);
+                startActivity(start);
+            }
+        });
+
     }
+
     //start sign up activity
     private void getSignUpActivity(){
         Intent start = new Intent(getApplicationContext(), SignUpActivity.class);

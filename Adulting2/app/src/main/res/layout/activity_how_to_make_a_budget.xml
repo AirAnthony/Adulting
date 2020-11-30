@@ -2,329 +2,651 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     tools:context=".HowToMakeABudgetActivity">
 
-    <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="118dp"
-        android:layout_height="117dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.045"
-        app:srcCompat="@drawable/companylogo" />
-
-    <TextView
-        android:id="@+id/financelbl"
-        android:layout_width="136dp"
-        android:layout_height="31dp"
-        android:fontFamily="@font/cantata_one"
-        android:text="  Finance"
-        android:textColor="#0C0C0C"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.534"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView8"
-        app:layout_constraintVertical_bias="0.072" />
-
-    <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="78dp"
-        android:layout_height="60dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.252"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.263"
-        app:srcCompat="@drawable/financesymbol" />
-
-    <TextView
-        android:id="@+id/budgetlbl"
+    <ScrollView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="49dp"
-        android:fontFamily="@font/cantata_one"
-        android:text="How to Make a Budget"
-        android:textColor="#0E0E0E"
-        android:textSize="24sp"
-        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/financelbl"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="405dp"
-        android:layout_height="386dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginLeft="4dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.979">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-        <ScrollView
-            android:layout_width="409dp"
-            android:layout_height="390dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical" >
+                <ImageView
+                    android:id="@+id/imageView35"
+                    android:layout_width="184dp"
+                    android:layout_height="165dp"
+                    android:layout_marginStart="93dp"
+                    android:layout_marginLeft="93dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.23"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.04"
+                    app:srcCompat="@drawable/companylogo" />
 
-                <TextView
-                    android:id="@+id/budgetText"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:contentDescription="@string/budgetText"
-                    android:fontFamily="@font/cantata_one"
-                    android:text="To take control of your spending and achieve your financial goals, you need an accurate and realistic budget that is suited to you and your life. "
-                    android:textColor="#0E0E0E"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/budgetText2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="234dp"
-                    android:layout_marginTop="62dp"
-                    android:fontFamily="@font/cantata_one"
-                    android:text="A budget tracks and compares your income and expenses for a set period if time. Generally, this period is for one month. A proper budget will show you how much money you bring in and compare that amount to your expenses as well as non-essential spending. If utilized, a budget can help you save money and can assist you in achieving your financial goals."
-                    android:textColor="#0E0E0E"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/budgetText3"
-                    android:layout_width="match_parent"
-                    android:layout_height="117dp"
-                    android:fontFamily="@font/cantata_one"
-                    android:text="The key to a budget is to have balance. If you spend less in one area, you can spend more in another or are able to utilize that money to achieve a goal, such as a large purchase you’ve been wanting, a vacation, an emergency fund or even investment."
-                    android:textColor="#0E0E0E"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/textView9"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
-
-                <TextView
-                    android:id="@+id/step1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/cantata_one"
-                    android:text="Let's start by making a list of your expenses. Gather some of your financial staments, and write below a list of the expenses you've had in the past month."
-                    android:textColor="#0E0E0E"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
-
-                <EditText
-                    android:id="@+id/step1Input"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:gravity="start|top"
-                    android:inputType="textMultiLine"
-                    android:text="Enter Your Expenses Here"
-                    android:textColor="#0E0E0E"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/textView10"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
-
-                <TextView
-                    android:id="@+id/step2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/cantata_one"
-                    android:text="Next, gather your statements an make a list of your income, and enter it below."
-                    android:textColor="#0E0E0E"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
-
-                <EditText
-                    android:id="@+id/step2Input"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:gravity="start|top"
-                    android:inputType="textMultiLine"
-                    android:text="Enter Your Income Here"
-                    android:textColor="#0E0E0E"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/textView11"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
-
-                <TextView
-                    android:id="@+id/step3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/cantata_one"
-                    android:text="Next, we will determine your fixed expenses. These are expenses that stay the same amount each time, such as rent, internet, childcare etc. List any essential payments that tend to be the same from month to month."
-                    android:textColor="#0E0E0E"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
-
-                <EditText
-                    android:id="@+id/step3Input"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:gravity="start|top"
-                    android:inputType="textMultiLine"
-                    android:text="Enter Your Fixed Expenses Here"
-                    android:textColor="#0E0E0E"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/textView12"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
-
-                <TextView
-                    android:id="@+id/step4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/cantata_one"
-                    android:text="Now we will determine your variable expenses. These expenses vary change from month to month. For example, groceries, gas, entertainment etc. Write below a list of expenses that vary. "
-                    android:textColor="#0E0E0E"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
-
-                <EditText
-                    android:id="@+id/step4Input"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:gravity="start|top"
-                    android:inputType="textMultiLine"
-                    android:text="Enter Your Variable Expenses Here"
-                    android:textColor="#0E0E0E"
-                    android:textStyle="bold" />
+                <ImageView
+                    android:id="@+id/imageView36"
+                    android:layout_width="89dp"
+                    android:layout_height="61dp"
+                    android:layout_marginTop="1dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.192"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView35"
+                    app:layout_constraintVertical_bias="0.011"
+                    app:srcCompat="@drawable/financesymbol" />
 
                 <TextView
                     android:id="@+id/textView13"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28dp"
+                    android:fontFamily="@font/cantata_one"
+                    android:text="How to Make a Budget"
+                    android:textColor="#090808"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.73"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView35"
+                    app:layout_constraintVertical_bias="0.0" />
 
                 <TextView
-                    android:id="@+id/step5"
-                    android:layout_width="match_parent"
+                    android:id="@+id/financeText1"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="35dp"
                     android:fontFamily="@font/cantata_one"
-                    android:text="Now we will make totals out of your income and expenses. If your income total is higher than your expenses total, we are off to a good start. Any extra funds can be put towards specific goals such as, debt payment, retirement savings or vacation fund."
+                    android:text="TextView"
+                    android:textColor="#131313"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView13"
+                    app:layout_constraintVertical_bias="0.019" />
+
+                <ImageView
+                    android:id="@+id/imageView37"
+                    android:layout_width="416dp"
+                    android:layout_height="235dp"
+                    android:layout_marginTop="24dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/financeText1"
+                    app:srcCompat="@drawable/financefillerpic3" />
+
+                <TextView
+                    android:id="@+id/financeText2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:fontFamily="@font/cantata_one"
+                    android:text="TextView"
+                    android:textColor="#0C0C0C"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView37" />
+
+                <TextView
+                    android:id="@+id/financeText3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:fontFamily="@font/cantata_one"
+                    android:text="TextView"
+                    android:textColor="#100F0F"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/financeText2" />
+
+                <ImageView
+                    android:id="@+id/imageView38"
+                    android:layout_width="445dp"
+                    android:layout_height="237dp"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/financeText3"
+                    app:srcCompat="@drawable/financefillerpic2" />
+
+                <TextView
+                    android:id="@+id/financeText4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/cantata_one"
+                    android:text="TextView"
+                    android:textColor="#121111"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView38" />
+
+                <TextView
+                    android:id="@+id/financeText5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/cantata_one"
+                    android:text="TextView"
                     android:textColor="#0E0E0E"
                     android:textSize="18sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/financeText4" />
+
+                <TextView
+                    android:id="@+id/financeText6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/cantata_one"
+                    android:text="TextView"
+                    android:textColor="#101010"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/financeText5" />
+
+                <ImageView
+                    android:id="@+id/imageView39"
+                    android:layout_width="448dp"
+                    android:layout_height="302dp"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.437"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/financeText6"
+                    app:srcCompat="@drawable/financefillerpic5" />
+
+                <TextView
+                    android:id="@+id/financeText7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/cantata_one"
+                    android:text="TextView"
+                    android:textColor="#0C0C0C"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView39" />
+
+                <TextView
+                    android:id="@+id/financeText8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/cantata_one"
+                    android:text="TextView"
+                    android:textColor="#101010"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/financeText7" />
+
+                <TextView
+                    android:id="@+id/financeText9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/cantata_one"
+                    android:text="TextView"
+                    android:textColor="#0B0A0A"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/financeText8" />
 
                 <EditText
-                    android:id="@+id/step5Input1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:id="@+id/incomeTotal"
+                    android:layout_width="402dp"
+                    android:layout_height="53dp"
+                    android:layout_marginTop="16dp"
                     android:ems="10"
-                    android:inputType="textPersonName"
-                    android:text="Enter the amounts for you Income here:"
-                    android:textColor="#0E0E0E"
-                    android:textStyle="bold" />
+                    android:inputType="number"
+                    android:hint="Enter your total income for the month"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.444"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/financeText9" />
+
+                <TextView
+                    android:id="@+id/expensesListlbl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/cantata_one"
+                    android:text="Enter Your Expenses for Each Category:"
+                    android:textColor="#0C0C0C"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/incomeTotal" />
 
                 <EditText
-                    android:id="@+id/step5Input2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:id="@+id/mortgageCost"
+                    android:layout_width="394dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="8dp"
                     android:ems="10"
-                    android:inputType="textPersonName"
-                    android:text="Enter the amounts for your expenses here:"
-                    android:textColor="#0E0E0E"
-                    android:textStyle="bold" />
+                    android:inputType="number"
+                    android:hint="Mortgage/Rent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.497"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/expensesListlbl" />
 
-                <TextView
-                    android:id="@+id/step5Input1Result"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/cantata_one"
-                    android:text="Your total income is:"
-                    android:textColor="#0E0E0E"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/insuranceCost"
+                    android:layout_width="401dp"
+                    android:layout_height="46dp"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:hint="Insurance"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.497"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/mortgageCost" />
 
-                <TextView
-                    android:id="@+id/step5Input2Result"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/cantata_one"
-                    android:text="Your total expenses are:"
-                    android:textColor="#0E0E0E"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/utilityCost"
+                    android:layout_width="409dp"
+                    android:layout_height="50dp"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:hint="Utilities"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.497"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/insuranceCost" />
 
-                <TextView
-                    android:id="@+id/textView14"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/phoneCost"
+                    android:layout_width="408dp"
+                    android:layout_height="42dp"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:hint="Phone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.497"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/utilityCost" />
 
-                <TextView
-                    android:id="@+id/step6"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/cantata_one"
-                    android:text="If your income is more than your expenses, consider using the following formula:50-30-20: essential expenses should be 50% of your budget, your wants should be 30%, and savings and debt repayment should make up the remaining 20%."
-                    android:textColor="#0E0E0E"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/internetCost"
+                    android:layout_width="414dp"
+                    android:layout_height="46dp"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:hint="Internet"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.497"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/phoneCost" />
 
-                <TextView
-                    android:id="@+id/step6Part2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/cantata_one"
-                    android:text="If your expenses are greater than your income, find areas in your variable expenses that can be reduced or cut. If you have significant debt you may need to trim your fixed expenses and consider possibilities to increase your income to balance your budget."
-                    android:textColor="#0E0E0E"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/tvCost"
+                    android:layout_width="400dp"
+                    android:layout_height="48dp"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:hint="T.V"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.497"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/internetCost" />
 
-                <TextView
-                    android:id="@+id/textView15"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/gasCost"
+                    android:layout_width="406dp"
+                    android:layout_height="42dp"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:hint="Gas"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvCost" />
 
-                <TextView
-                    android:id="@+id/step7"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/cantata_one"
-                    android:text="Click save to save your new budget. This new layout of your financial needs and habits will be formatted and saved to your account, as well as emailed to you for your records. The key to success is monitor your expenses and stick to your budget. A tracker will be emailed to you so that you can continuously track your habits throughout the month. Good luck!"
-                    android:textColor="#0E0E0E"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/groceryCost"
+                    android:layout_width="406dp"
+                    android:layout_height="42dp"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:hint="Groceries"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/gasCost" />
+
+                <EditText
+                    android:id="@+id/entertainmentCost"
+                    android:layout_width="406dp"
+                    android:layout_height="42dp"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:hint="Entertainment"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/groceryCost" />
+
+                <EditText
+                    android:id="@+id/childCareCost"
+                    android:layout_width="406dp"
+                    android:layout_height="42dp"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:hint="Child Care"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/entertainmentCost" />
+
+                <EditText
+                    android:id="@+id/debtCost"
+                    android:layout_width="406dp"
+                    android:layout_height="42dp"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:hint="Credit Cards/Debt"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/childCareCost" />
+
+                <EditText
+                    android:id="@+id/loansCost"
+                    android:layout_width="406dp"
+                    android:layout_height="42dp"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:hint="Loans"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/debtCost" />
+
+                <EditText
+                    android:id="@+id/clothesCost"
+                    android:layout_width="406dp"
+                    android:layout_height="42dp"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:hint="Clothes"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/loansCost" />
+
+                <EditText
+                    android:id="@+id/carCost"
+                    android:layout_width="406dp"
+                    android:layout_height="42dp"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:hint="Car Payments"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/clothesCost" />
+
+                <EditText
+                    android:id="@+id/savings"
+                    android:layout_width="406dp"
+                    android:layout_height="42dp"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:hint="Savings"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/carCost" />
 
                 <Button
-                    android:id="@+id/saveBudgetbtn"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Save" />
+                    android:id="@+id/budgetbtn"
+                    android:layout_width="406dp"
+                    android:layout_height="42dp"
+                    android:ems="10"
+                    android:text="Show Budget"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/savings"/>
 
-            </LinearLayout>
-        </ScrollView>
+                <TextView
+                android:id="@+id/budgetlbl"
+                android:layout_width="406dp"
+                android:layout_height="42dp"
+                android:ems="10"
+                android:fontFamily="@font/cantata_one"
+                android:text="Your Budget:"
+                android:textColor="#0C0C0C"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/budgetbtn" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+                <TextView
+                    android:id="@+id/income"
+                    android:layout_width="406dp"
+                    android:layout_height="42dp"
+                    android:ems="10"
+                    android:fontFamily="@font/cantata_one"
+                    android:textColor="#0C0C0C"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/budgetlbl" />
 
+                <TextView
+                    android:id="@+id/insurance"
+                    android:layout_width="406dp"
+                    android:layout_height="42dp"
+                    android:ems="10"
+                    android:fontFamily="@font/cantata_one"
+                    android:textColor="#0C0C0C"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/income" />
+
+                <TextView
+                    android:id="@+id/utility"
+                    android:layout_width="406dp"
+                    android:layout_height="42dp"
+                    android:ems="10"
+                    android:fontFamily="@font/cantata_one"
+                    android:textColor="#0C0C0C"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/insurance" />
+
+                <TextView
+                    android:id="@+id/phone"
+                    android:layout_width="406dp"
+                    android:layout_height="42dp"
+                    android:ems="10"
+                    android:fontFamily="@font/cantata_one"
+                    android:textColor="#0C0C0C"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/utility" />
+
+                <TextView
+                    android:id="@+id/internet"
+                    android:layout_width="406dp"
+                    android:layout_height="42dp"
+                    android:ems="10"
+                    android:fontFamily="@font/cantata_one"
+                    android:textColor="#0C0C0C"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/phone" />
+
+                <TextView
+                    android:id="@+id/tv"
+                    android:layout_width="406dp"
+                    android:layout_height="42dp"
+                    android:ems="10"
+                    android:fontFamily="@font/cantata_one"
+                    android:textColor="#0C0C0C"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/internet" />
+
+                <TextView
+                    android:id="@+id/gas"
+                    android:layout_width="406dp"
+                    android:layout_height="42dp"
+                    android:ems="10"
+                    android:fontFamily="@font/cantata_one"
+                    android:textColor="#0C0C0C"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv" />
+
+                <TextView
+                    android:id="@+id/grocery"
+                    android:layout_width="406dp"
+                    android:layout_height="42dp"
+                    android:ems="10"
+                    android:fontFamily="@font/cantata_one"
+                    android:textColor="#0C0C0C"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/gas" />
+
+                <TextView
+                    android:id="@+id/entertainment"
+                    android:layout_width="406dp"
+                    android:layout_height="42dp"
+                    android:ems="10"
+                    android:fontFamily="@font/cantata_one"
+                    android:textColor="#0C0C0C"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/grocery" />
+
+                <TextView
+                    android:id="@+id/childCare"
+                    android:layout_width="406dp"
+                    android:layout_height="42dp"
+                    android:ems="10"
+                    android:fontFamily="@font/cantata_one"
+                    android:textColor="#0C0C0C"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/entertainment" />
+
+                <TextView
+                    android:id="@+id/debt"
+                    android:layout_width="406dp"
+                    android:layout_height="42dp"
+                    android:ems="10"
+                    android:fontFamily="@font/cantata_one"
+                    android:textColor="#0C0C0C"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/childCare" />
+
+                <TextView
+                    android:id="@+id/loans"
+                    android:layout_width="406dp"
+                    android:layout_height="42dp"
+                    android:ems="10"
+                    android:fontFamily="@font/cantata_one"
+                    android:textColor="#0C0C0C"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/debt" />
+
+                <TextView
+                    android:id="@+id/clothes"
+                    android:layout_width="406dp"
+                    android:layout_height="42dp"
+                    android:ems="10"
+                    android:fontFamily="@font/cantata_one"
+                    android:textColor="#0C0C0C"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/loans" />
+
+                <TextView
+                    android:id="@+id/car"
+                    android:layout_width="406dp"
+                    android:layout_height="42dp"
+                    android:ems="10"
+                    android:fontFamily="@font/cantata_one"
+                    android:textColor="#0C0C0C"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/clothes" />
+
+                <TextView
+                    android:id="@+id/saving"
+                    android:layout_width="406dp"
+                    android:layout_height="42dp"
+                    android:ems="10"
+                    android:fontFamily="@font/cantata_one"
+                    android:textColor="#0C0C0C"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/car" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 public class WelcomePage extends AppCompatActivity {
 
@@ -15,7 +17,20 @@ public class WelcomePage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome_page);
+
+        //initialize button
+        Button profilebtn = (Button) findViewById(R.id.profilebtn);
+
+        //navigation for the profile button
+        profilebtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent start = new Intent(getApplicationContext(), ProfileActivity.class);
+                startActivity(start);
+            }
+        });
     }
+
     //start sign up activity
     private void getSignUpActivity(){
         Intent start = new Intent(getApplicationContext(), SignUpActivity.class);
