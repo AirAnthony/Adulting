@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CookingBasicsActivity">
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="71dp"
+        android:layout_height="59dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.258"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.294"
+        app:srcCompat="@drawable/personalsymbol" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:fontFamily="@font/cantata_one"
+        android:text="Personal Skills"
+        android:textColor="#0C0C0C"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.614"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView11"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="142dp"
+        android:layout_height="155dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.045"
+        app:srcCompat="@drawable/companylogo" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="413dp"
+        android:layout_height="443dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/cookText1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cantata_one"
+                    android:text="Whether you want to learn to feed yourself or to impress others, knowing how to cook is an essential skill to possess. If you don’t know your way around a kitchen it may be easy to feel lost- but don’t fear! We have outlined the absolute basics to get you on your way to knowing exactly what to do!"
+                    android:textColor="#0E0D0D"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/cookText2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cantata_one"
+                    android:text="1.	Always follow the recipe. Recipes are rules made to be followed- do not break them! Think of a recipe as your guide to success, stick to it, and your chances of a successful dish is within your grasp."
+                    android:textColor="#0E0D0D"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/cookText3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cantata_one"
+                    android:text="2.	Prep your ingredients before you start. Nothing is worse than being scattered when your working with the elements. Not only will prepping ahead of time reduce the mess, but it will also ensure that you are not jumping frantically from step to step and will reduce your risk for errors."
+                    android:textColor="#0E0D0D"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/cookText4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cantata_one"
+                    android:text="3.	Do not overcrowd your cookware. Different ingredients react differently as they cook. The safest way to prevent uneven cooking and unpleasant texture is to be sure that you do not over fill your cookware. Give your food the space it needs to cook!"
+                    android:textColor="#0E0D0D"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/cookText5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cantata_one"
+                    android:text="4.	Keep your cookware handles away from burners. There is no easier way to say this, keep your handles away from heat and you will keep your hands away from potential burns and pains!"
+                    android:textColor="#0E0D0D"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView25"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/cookText6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cantata_one"
+                    android:text="5.	Invest in a quality knife. The best way to prevent injury is to use the proper tools. Use a good quality knife, so you can keep your hands in good quality!"
+                    android:textColor="#0E0D0D"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView27"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/cookText7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cantata_one"
+                    android:text="6.	Never leave the kitchen unattended. Last thing we want is a potential ruined meal, or worse, a fire! Never leave your cooking food unattended!"
+                    android:textColor="#0E0D0D"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView29"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/cooktext8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cantata_one"
+                    android:text="7.	Do not put food in a cold pan. Always build up the heat before putting food in your cookware. This prevents losing all those yummy juices to keep your food tasty!"
+                    android:textColor="#0E0D0D"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView31"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/cookText9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cantata_one"
+                    android:text="Test Your Knowledge: See if you can match the kitchen utensils to their image.   For each row you must enter each utensil name separated by commas.  How many can you get right?!"
+                    android:textColor="#0E0D0D"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageView13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/kitchenutensils2" />
+
+
+                <ImageView
+                    android:id="@+id/imageView14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/kitchenutensils" />
+
+                <EditText
+                    android:id="@+id/inputBoxUtensil2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:hint="utensil names"
+                    android:layout_below="@+id/imageView14"
+                    android:layout_centerHorizontal="true"/>
+
+                <Button
+                    android:id="@+id/submitBtn2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Submit"
+                    android:layout_below="@+id/inputBoxUtensil2"
+                    android:layout_centerHorizontal="true"
+                    android:onClick="start"/>
+
+                <ImageView
+                    android:id="@+id/imageViewResult"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/waiting"
+                    android:layout_below="@id/submitBtn2"
+                    android:layout_centerHorizontal="true"/>
+
+                <ImageView
+                    android:id="@+id/imageView15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/kitchenutensils3" />
+
+                <EditText
+                    android:id="@+id/inputBoxUtensil3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:hint="utensil names"
+                    android:layout_below="@+id/imageView15"
+                    android:layout_centerHorizontal="true"/>
+
+                <Button
+                    android:id="@+id/submitBtn3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Submit"
+                    android:layout_below="@+id/inputBoxUtensil3"
+                    android:layout_centerHorizontal="true"
+                    android:onClick="startTwo"/>
+
+                <ImageView
+                    android:id="@+id/imageViewResultThree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/waiting"
+                    android:layout_below="@id/submitBtn3"
+                    android:layout_centerHorizontal="true"/>
+
+
+                <ImageView
+                    android:id="@+id/imageView16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/kitchenutensils4" />
+
+                <EditText
+                    android:id="@+id/inputBoxUtensil4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:hint="utensil names"
+                    android:layout_below="@+id/imageView16"
+                    android:layout_centerHorizontal="true"/>
+
+                <Button
+                    android:id="@+id/submitBtn4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Submit"
+                    android:layout_below="@+id/inputBoxUtensil4"
+                    android:layout_centerHorizontal="true"
+                    android:onClick="startThree"/>
+
+                <ImageView
+                    android:id="@+id/imageViewResultFour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/waiting"
+                    android:layout_below="@id/submitBtn4"
+                    android:layout_centerHorizontal="true"/>
+
+
+                <ImageView
+                    android:id="@+id/imageView17"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/kitchenutensils5" />
+
+                <EditText
+                    android:id="@+id/inputBoxUtensil5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:hint="utensil names"
+                    android:layout_below="@+id/imageView17"
+                    android:layout_centerHorizontal="true"/>
+
+                <Button
+                    android:id="@+id/submitBtn5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Submit"
+                    android:layout_below="@+id/inputBoxUtensil5"
+                    android:layout_centerHorizontal="true"
+                    android:onClick="startFour"/>
+
+                <ImageView
+                    android:id="@+id/imageViewResultFive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/waiting"
+                    android:layout_below="@id/submitBtn5"
+                    android:layout_centerHorizontal="true"/>
+
+
+
+                <ImageView
+                    android:id="@+id/imageView18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/kitchenutensils6" />
+
+                <EditText
+                    android:id="@+id/inputBoxUtensil6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:hint="utensil names"
+                    android:layout_below="@+id/imageView18"
+                    android:layout_centerHorizontal="true"/>
+
+                <Button
+                    android:id="@+id/submitBtn6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Submit"
+                    android:layout_below="@+id/inputBoxUtensil6"
+                    android:layout_centerHorizontal="true"
+                    android:onClick="startFive"/>
+
+                <ImageView
+                    android:id="@+id/imageViewResultSix"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/waiting"
+                    android:layout_below="@id/submitBtn6"
+                    android:layout_centerHorizontal="true"/>
+
+            </LinearLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
