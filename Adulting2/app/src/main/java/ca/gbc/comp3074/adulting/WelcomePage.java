@@ -30,7 +30,6 @@ public class WelcomePage extends AppCompatActivity {
             }
         });
     }
-    
     //start sign up activity
     private void getSignUpActivity(){
         Intent start = new Intent(getApplicationContext(), SignUpActivity.class);
