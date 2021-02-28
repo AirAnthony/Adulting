@@ -1,0 +1,679 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/layoutForHowToMakeABudget"
+    android:background="@drawable/gradient_list"
+    tools:context=".HowToMakeABudgetActivity">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageView35"
+                    android:layout_width="184dp"
+                    android:layout_height="165dp"
+                    android:layout_marginStart="93dp"
+                    android:layout_marginLeft="93dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.23"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.04"
+                    app:srcCompat="@drawable/companylogo" />
+
+                <ImageView
+                    android:id="@+id/imageView36"
+                    android:layout_width="89dp"
+                    android:layout_height="61dp"
+                    android:layout_marginTop="1dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.192"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView35"
+                    app:layout_constraintVertical_bias="0.011"
+                    app:srcCompat="@drawable/financesymbol" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28dp"
+                    android:fontFamily="@font/cantata_one"
+                    android:text="How to Make a Budget"
+                    android:textColor="#090808"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.702"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView35"
+                    app:layout_constraintVertical_bias="0.013" />
+
+                <TextView
+                    android:id="@+id/financeText1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35dp"
+                    android:fontFamily="@font/cantata_one"
+                    android:text="TextView"
+                    android:textColor="#131313"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView13"
+                    app:layout_constraintVertical_bias="0.019" />
+
+                <ImageView
+                    android:id="@+id/imageView37"
+                    android:layout_width="416dp"
+                    android:layout_height="235dp"
+                    android:layout_marginTop="24dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/financeText1"
+                    app:srcCompat="@drawable/financefillerpic3" />
+
+                <TextView
+                    android:id="@+id/financeText2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:fontFamily="@font/cantata_one"
+                    android:text="TextView"
+                    android:textColor="#0C0C0C"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView37" />
+
+                <TextView
+                    android:id="@+id/financeText3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:fontFamily="@font/cantata_one"
+                    android:text="TextView"
+                    android:textColor="#100F0F"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/financeText2" />
+
+                <ImageView
+                    android:id="@+id/imageView38"
+                    android:layout_width="445dp"
+                    android:layout_height="237dp"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/financeText3"
+                    app:srcCompat="@drawable/financefillerpic2" />
+
+                <TextView
+                    android:id="@+id/financeText4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/cantata_one"
+                    android:text="TextView"
+                    android:textColor="#121111"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView38" />
+
+                <TextView
+                    android:id="@+id/financeText5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/cantata_one"
+                    android:text="TextView"
+                    android:textColor="#0E0E0E"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/financeText4" />
+
+                <TextView
+                    android:id="@+id/financeText6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/cantata_one"
+                    android:text="TextView"
+                    android:textColor="#101010"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/financeText5" />
+
+                <ImageView
+                    android:id="@+id/imageView39"
+                    android:layout_width="448dp"
+                    android:layout_height="302dp"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.437"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/financeText6"
+                    app:srcCompat="@drawable/financefillerpic5" />
+
+                <TextView
+                    android:id="@+id/financeText7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/cantata_one"
+                    android:text="TextView"
+                    android:textColor="#0C0C0C"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView39" />
+
+                <TextView
+                    android:id="@+id/financeText8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/cantata_one"
+                    android:text="TextView"
+                    android:textColor="#101010"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/financeText7" />
+
+                <TextView
+                    android:id="@+id/financeText9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/cantata_one"
+                    android:text="TextView"
+                    android:textColor="#0B0A0A"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/financeText8" />
+
+                <EditText
+                    android:id="@+id/incomeTotal"
+                    android:layout_width="402dp"
+                    android:layout_height="53dp"
+                    android:layout_marginTop="16dp"
+                    android:ems="10"
+                    android:hint="Enter your total income for the month"
+                    android:inputType="numberDecimal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.444"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/financeText9" />
+
+                <TextView
+                    android:id="@+id/expensesListlbl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/cantata_one"
+                    android:text="Enter Your Expenses for Each Category:"
+                    android:textColor="#0C0C0C"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/incomeTotal" />
+
+                <EditText
+                    android:id="@+id/mortgageCost"
+                    android:layout_width="394dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="8dp"
+                    android:ems="10"
+                    android:hint="Mortgage/Rent"
+                    android:inputType="numberDecimal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.497"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/expensesListlbl" />
+
+                <EditText
+                    android:id="@+id/insuranceCost"
+                    android:layout_width="401dp"
+                    android:layout_height="46dp"
+                    android:ems="10"
+                    android:hint="Insurance"
+                    android:inputType="numberDecimal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.497"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/mortgageCost" />
+
+                <EditText
+                    android:id="@+id/utilityCost"
+                    android:layout_width="409dp"
+                    android:layout_height="50dp"
+                    android:ems="10"
+                    android:hint="Utilities"
+                    android:inputType="numberDecimal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.497"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/insuranceCost" />
+
+                <EditText
+                    android:id="@+id/phoneCost"
+                    android:layout_width="408dp"
+                    android:layout_height="42dp"
+                    android:ems="10"
+                    android:hint="Phone"
+                    android:inputType="numberDecimal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.497"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/utilityCost" />
+
+                <EditText
+                    android:id="@+id/internetCost"
+                    android:layout_width="414dp"
+                    android:layout_height="46dp"
+                    android:ems="10"
+                    android:hint="Internet"
+                    android:inputType="numberDecimal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.497"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/phoneCost" />
+
+                <EditText
+                    android:id="@+id/tvCost"
+                    android:layout_width="400dp"
+                    android:layout_height="48dp"
+                    android:ems="10"
+                    android:hint="T.V"
+                    android:inputType="numberDecimal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.497"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/internetCost" />
+
+                <EditText
+                    android:id="@+id/gasCost"
+                    android:layout_width="406dp"
+                    android:layout_height="42dp"
+                    android:ems="10"
+                    android:hint="Gas"
+                    android:inputType="numberDecimal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvCost" />
+
+                <EditText
+                    android:id="@+id/groceryCost"
+                    android:layout_width="406dp"
+                    android:layout_height="42dp"
+                    android:ems="10"
+                    android:hint="Groceries"
+                    android:inputType="numberDecimal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/gasCost" />
+
+                <EditText
+                    android:id="@+id/entertainmentCost"
+                    android:layout_width="406dp"
+                    android:layout_height="42dp"
+                    android:ems="10"
+                    android:hint="Entertainment"
+                    android:inputType="numberDecimal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/groceryCost" />
+
+                <EditText
+                    android:id="@+id/childCareCost"
+                    android:layout_width="406dp"
+                    android:layout_height="42dp"
+                    android:ems="10"
+                    android:hint="Child Care"
+                    android:inputType="numberDecimal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/entertainmentCost" />
+
+                <EditText
+                    android:id="@+id/debtCost"
+                    android:layout_width="406dp"
+                    android:layout_height="42dp"
+                    android:ems="10"
+                    android:hint="Credit Cards/Debt"
+                    android:inputType="numberDecimal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/childCareCost" />
+
+                <EditText
+                    android:id="@+id/loansCost"
+                    android:layout_width="406dp"
+                    android:layout_height="42dp"
+                    android:ems="10"
+                    android:hint="Loans"
+                    android:inputType="numberDecimal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/debtCost" />
+
+                <EditText
+                    android:id="@+id/clothesCost"
+                    android:layout_width="406dp"
+                    android:layout_height="42dp"
+                    android:ems="10"
+                    android:hint="Clothes"
+                    android:inputType="numberDecimal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/loansCost" />
+
+                <EditText
+                    android:id="@+id/carCost"
+                    android:layout_width="406dp"
+                    android:layout_height="42dp"
+                    android:ems="10"
+                    android:hint="Car Payments"
+                    android:inputType="numberDecimal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/clothesCost" />
+
+                <EditText
+                    android:id="@+id/savings"
+                    android:layout_width="406dp"
+                    android:layout_height="42dp"
+                    android:ems="10"
+                    android:hint="Savings"
+                    android:inputType="numberDecimal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/carCost" />
+
+                <Button
+                    android:id="@+id/budgetbtn"
+                    android:layout_width="406dp"
+                    android:layout_height="42dp"
+                    android:ems="10"
+                    android:hint="Show Budget"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/savings"/>
+
+                <TextView
+                android:id="@+id/budgetlbl"
+                android:layout_width="406dp"
+                android:layout_height="42dp"
+                android:ems="10"
+                android:fontFamily="@font/cantata_one"
+                android:text="Your Budget:"
+                android:textColor="#0C0C0C"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/budgetbtn" />
+
+                <TextView
+                    android:id="@+id/incomeOutput"
+                    android:layout_width="406dp"
+                    android:layout_height="42dp"
+                    android:ems="10"
+                    android:fontFamily="@font/cantata_one"
+                    android:textColor="#0C0C0C"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/budgetlbl" />
+
+                <TextView
+                    android:id="@+id/mortgageOutput"
+                    android:layout_width="406dp"
+                    android:layout_height="42dp"
+                    android:ems="10"
+                    android:fontFamily="@font/cantata_one"
+                    android:textColor="#0C0C0C"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/incomeOutput" />
+
+                <TextView
+                    android:id="@+id/insuranceOutput"
+                    android:layout_width="406dp"
+                    android:layout_height="42dp"
+                    android:ems="10"
+                    android:fontFamily="@font/cantata_one"
+                    android:textColor="#0C0C0C"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/mortgageOutput" />
+
+                <TextView
+                    android:id="@+id/utilitiesOutput"
+                    android:layout_width="406dp"
+                    android:layout_height="42dp"
+                    android:ems="10"
+                    android:fontFamily="@font/cantata_one"
+                    android:textColor="#0C0C0C"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/insuranceOutput" />
+
+                <TextView
+                    android:id="@+id/phoneOutput"
+                    android:layout_width="406dp"
+                    android:layout_height="42dp"
+                    android:ems="10"
+                    android:fontFamily="@font/cantata_one"
+                    android:textColor="#0C0C0C"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/utilitiesOutput" />
+
+                <TextView
+                    android:id="@+id/internetOutput"
+                    android:layout_width="406dp"
+                    android:layout_height="42dp"
+                    android:ems="10"
+                    android:fontFamily="@font/cantata_one"
+                    android:textColor="#0C0C0C"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/phoneOutput" />
+
+                <TextView
+                    android:id="@+id/tvOutput"
+                    android:layout_width="406dp"
+                    android:layout_height="42dp"
+                    android:ems="10"
+                    android:fontFamily="@font/cantata_one"
+                    android:textColor="#0C0C0C"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/internetOutput" />
+
+                <TextView
+                    android:id="@+id/gasOutput"
+                    android:layout_width="406dp"
+                    android:layout_height="42dp"
+                    android:ems="10"
+                    android:fontFamily="@font/cantata_one"
+                    android:textColor="#0C0C0C"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvOutput" />
+
+                <TextView
+                    android:id="@+id/groceriesOutput"
+                    android:layout_width="406dp"
+                    android:layout_height="42dp"
+                    android:ems="10"
+                    android:fontFamily="@font/cantata_one"
+                    android:textColor="#0C0C0C"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/gasOutput" />
+                <TextView
+                    android:id="@+id/entertainmentOutput"
+                    android:layout_width="406dp"
+                    android:layout_height="42dp"
+                    android:ems="10"
+                    android:fontFamily="@font/cantata_one"
+                    android:textColor="#0C0C0C"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/groceriesOutput" />
+                <TextView
+                    android:id="@+id/childCareOutput"
+                    android:layout_width="406dp"
+                    android:layout_height="42dp"
+                    android:ems="10"
+                    android:fontFamily="@font/cantata_one"
+                    android:textColor="#0C0C0C"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/entertainmentOutput" />
+
+                <TextView
+                    android:id="@+id/creditCardOutput"
+                    android:layout_width="406dp"
+                    android:layout_height="42dp"
+                    android:ems="10"
+                    android:fontFamily="@font/cantata_one"
+                    android:textColor="#0C0C0C"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/childCareOutput" />
+
+                <TextView
+                    android:id="@+id/loansOutput"
+                    android:layout_width="406dp"
+                    android:layout_height="42dp"
+                    android:ems="10"
+                    android:fontFamily="@font/cantata_one"
+                    android:textColor="#0C0C0C"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/creditCardOutput" />
+
+                <TextView
+                    android:id="@+id/clothesOutput"
+                    android:layout_width="406dp"
+                    android:layout_height="42dp"
+                    android:ems="10"
+                    android:fontFamily="@font/cantata_one"
+                    android:textColor="#0C0C0C"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/loansOutput" />
+
+                <TextView
+                    android:id="@+id/carOutput"
+                    android:layout_width="406dp"
+                    android:layout_height="42dp"
+                    android:ems="10"
+                    android:fontFamily="@font/cantata_one"
+                    android:textColor="#0C0C0C"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/clothesOutput" />
+
+                <TextView
+                    android:id="@+id/savingsOutput"
+                    android:layout_width="406dp"
+                    android:layout_height="42dp"
+                    android:ems="10"
+                    android:fontFamily="@font/cantata_one"
+                    android:textColor="#0C0C0C"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/carOutput" />
+
+                <TextView
+                    android:id="@+id/totalOutput"
+                    android:layout_width="406dp"
+                    android:layout_height="42dp"
+                    android:ems="10"
+                    android:fontFamily="@font/cantata_one"
+                    android:textColor="#0C0C0C"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/savingsOutput" />
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
