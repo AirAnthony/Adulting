@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ca.georgebrown.comp3074.adulting">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".FinanceStartActivity"></activity>
+        <activity android:name=".FinanceResultActivity" />
+        <activity android:name=".FinanceQuizzesActivity" />
+        <activity android:name=".HowToDealWithToxicPeople" />
+        <activity android:name=".HowToDealWithStress" />
+        <activity android:name=".HowToBuildLastingRelationships" />
+        <activity android:name=".HowToManageYourTimeActivity" />
+        <activity android:name=".HowToGetOutOfDebtActivity" />
+        <activity android:name=".HowToBuildCredit" />
+        <activity android:name=".ForgotPassword" />
+        <activity android:name=".PersonalSkillsActivity" />
+        <activity android:name=".WellnessActivity" />
+        <activity android:name=".FinanceActivity" />
+        <activity android:name=".SignUpActivity" />
+        <activity android:name=".WorkingThroughDepressionActivity" />
+        <activity android:name=".CookingBasicsActivity" />
+        <activity android:name=".HowToMakeABudgetActivity" />
+        <activity android:name=".MainContentActivity" />
+        <activity android:name=".WelcomePage" />
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
