@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WorkingThroughDepressionActivity">
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="126dp"
+        android:layout_height="132dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.027"
+        app:srcCompat="@drawable/companylogo" />
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="71dp"
+        android:layout_height="59dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.297"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.261"
+        app:srcCompat="@drawable/wellnesssymbol" />
+
+    <TextView
+        android:id="@+id/wellnessText"
+        android:layout_width="177dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="44dp"
+        android:fontFamily="@font/cantata_one"
+        android:text="Wellness"
+        android:textColor="#1C1C1C"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.735"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView19" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="409dp"
+        android:layout_height="426dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <VideoView
+                    android:id="@+id/videoView"
+                    android:layout_width="match_parent"
+                    android:layout_height="145dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginRight="0dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/wellnessText1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cantata_one"
+                    android:text="Maintaining Your mental health has never been so important. Depression is a common struggle in society, but there are ways that you can overcome!"
+                    android:textColor="#0B0A0A"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/wellnesstext2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cantata_one"
+                    android:text="1.	Stay in the present: With technology constantly evolving and being integrated more and more into our daily lives, people spend less time in the present now more than ever before.  It is important to set certain times within your day to turn off your devices.  For example when you’re eating food, talking to people, in the transit system/car.  A lot of social media apps tell a false story that makes people compare their own lives with the lives of others that aren’t even accurate.  By taking time to step away from your device you become more grateful for what you do have.  "
+                    android:textColor="#0B0A0A"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/wellnesstext3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cantata_one"
+                    android:text="2.	Get outside: Going for a nice walk is a good way to distract yourself from your thoughts.  Not only does it benefit your mental health, but also your physical health.  The longer the walk the better.  When we exercise endorphins are released, which helps our mood.  You should try to walk at least three times a week and for a duration of fifty minutes or more.  A short walk will not have a big impact on your mood."
+                    android:textColor="#0B0A0A"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/wellnessText4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cantata_one"
+                    android:text="3.	Get a good sleep: Sleep is very crucial to a good mood.  Adults should get at least 7 – 8 hours a night.  It is also important to keep a consistent sleep schedule in order to fall asleep easily.  If you wake up at night and sleep through the morning your mood will not be the same if you did the opposite.  Seeing the natural light of the sun has an effect on an individual’s mood.  If you struggle to sleep remember to not look at any screens for at least two hours prior to going to bed.  Reading a book and taking a bath also help.  "
+                    android:textColor="#0B0A0A"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/wellnessText5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cantata_one"
+                    android:text="4.	Meditate: Meditation is one of the best ways to improve your mental health.  What makes mediation so great is it’s accessibility to everyone.  All you need is yourself and a quiet environment.  Meditation not only reduces stress and anxiety, but also improves sleep (step 3).  It is said that meditation is about as effective as antidepressants.  If you are just starting out, try meditation for five to ten minutes.  It will be hard for beginners to try to meditate for an hour or more, when they’re just starting out.  Over time you should build up to longer sessions.  You can either choose to meditate with meditation audio guides or on your own.  Throughout your meditation remember to focus on your breathing and being in the present moment (step 1).  Having said all that, you shouldn’t meditate too much.  Nothing done in excess is good.  Make a schedule with days in the week when you will meditate for specific time frames that make sense."
+                    android:textColor="#0E0E0E"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/welnessText7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cantata_one"
+                    android:text="It has been proven that keeping a gratitude journal can exponentially improve your mood. Use the space below to write some things in your life that you are grateful for! You'll notice that taking part in this simple activity just for two minutes a day can have a wonderful impact on your overall attitude and happiness!"
+                    android:textColor="#0E0E0E"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/wellnessTextInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:inputType="textMultiLine"
+                    android:text="What are you grateful for?"
+                    android:textColor="#121111"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
