@@ -1,2 +1,0 @@
-include ':app'
-rootProject.name = "prototype_two_"
